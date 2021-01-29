@@ -22,7 +22,7 @@ export default function App() {
     <View style={styles.container}>
       <Text style={styles.title}>ToDo List</Text>
       <View style={styles.head}>
-        <TextInput style={styles.input} placeholder="New Task?" onChangeText={text=> setTask(text)} value={task} />
+        <TextInput style={styles.input} placeholder=" New Task?" onChangeText={text=> setTask(text)} value={task} />
         <Button title="Add" onPress={addItem} />
       </View>
       <ScrollView>
@@ -63,16 +63,19 @@ const styles = StyleSheet.create({
     borderWidth: 1,
     borderColor: 'black',
     backgroundColor: 'white',
+    width: '80%',
   },
   list: {
     flexDirection:'row',
     justifyContent: 'space-between',
     borderWidth: 1,
-    width: 250,
+    width: '70%',
     borderColor: "blue",
     backgroundColor: '#D1EDF2',
     padding: 10,
-    margin: 5,
+    marginVertical: 5,
+    marginHorizontal: '5%',
+    alignContent: 'center',
   },
   entry: {
     color: "blue",
